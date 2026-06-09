@@ -1,0 +1,119 @@
+# Coexist Gitignore for Next.js Frontend and Python FastAPI Backend
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+.docusaurus/
+.cache/
+.serverless/
+.fusebox/
+.dynamodb/
+.yarn/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# Next.js / Frontend Env Files (strictly ignore keys)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Firebase Service Account Credentials (secrets)
+ai-resume-analyzer-and-coach-firebase-adminsdk-fbsvc-cfd6456385.json
+*-adminsdk-*.json
+
+# Keep env examples tracked
+!.env.local.example
+!.env.example
+
+# Python / Backend cache and builds
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Pyenv
+.python-version
+
+# Poetry / Pipenv / Venv
+.venv/
+venv/
+ENV/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Backend / Python Env Files
+backend/.env
+backend/.env.local
+backend/.env.development
+backend/.env.production
+
+# Keep backend env examples tracked
+!backend/.env.example
+
+# Testing / Coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Local database / storage fallback
+backend/storage/files/*
+!backend/storage/files/.gitkeep
+backend/storage/db.json
+backend/storage/db.json.backup
+storage/
+
+# IDEs and Editors
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
